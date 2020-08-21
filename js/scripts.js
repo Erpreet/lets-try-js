@@ -87,11 +87,48 @@
 
  //Loops in javascript
 
- let myWhileIterator = 5;
- while( ) {                 //Repeats the code block as long as condition evaluates to (Boolean)true.
+ console.log("WHILE LOOP PRACTICE: \n ============================");
 
+ let myWhileIterator = 5;
+ while( myWhileIterator > 0) //if >=0 then display zero, depends upon comparison operator
+ {    
+                  //Repeats the code block as long as condition evaluates to (Boolean)true.
+console.log(`While iterator: ${myWhileIterator}`);
+myWhileIterator--; // myWhileIterator = myWhileIterator -1;
  }
 
+console.log("FOR... OF LOOP PRACTICE: \n=========================");
+ const myForArray = ["Walmart", "BestBuy", "Superstore","Safeway"];
+ for(const arrayItem of myForArray) // for..of will iterate on its own thru the array.
+ {
+    console.log(`This array item in our loop contains: ${arrayItem}`);
+ }
 
+ //let myNum=5 
+ // All 3 equivalent
+// myNum = myNum + 1;
+//myNum++;
+//myNum += 1;
+console.log("FOR LOOP PRACTICE: \n========================");
+for (let myForIterator = -5; myForIterator <30; myForIterator += 10 ) 
+{
+    //for loop has 3 parts
+    //assignment, condition, iteration
+    console.log(`This iteration is our for loop's value is: ${myForIterator}`);
 
+}
 
+//functions in javascript
+
+function myAdditionFunction (num1 = 0, num2= 0)
+{
+    return Number(num1) + Number (num2); //any code after return will not run as return is last thing in code
+}
+
+// Testing function
+const add2And4 = myAdditionFunction(2,4);
+console.log(add2And4);
+
+console.log(myAdditionFunction(-15, 35));
+
+console.log(myAdditionFunction(3.14, 67));
