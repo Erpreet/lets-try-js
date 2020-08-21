@@ -167,5 +167,22 @@ console.log(myMultiplicationFunction(3,9));
  * JavaScript Object
  */
 
- const myObject = {};
- 
+ const myPersonalInfoArray =[
+     "Preet",
+     38,
+     ["Skydiving", "Programming", "Mountain Climbing"]
+ ];
+
+ console.log("Person as an array:");
+ console.log(myPersonalInfoArray);
+ console.log(`Name is: ${myPersonalInfoArray[0]}`);
+
+ const myObject = {
+     name: "Preet",
+     age: 38,
+     hobbies: ["Skydiving", "Programming", "Mountain Climbing"]
+ };
+
+ console.log("Person as an object:");
+ console.log(myObject);
+ console.log(`Name is: ${myObject.name}.Age is: ${myObject.age}`);
