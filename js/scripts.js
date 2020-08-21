@@ -132,3 +132,40 @@ console.log(add2And4);
 console.log(myAdditionFunction(-15, 35));
 
 console.log(myAdditionFunction(3.14, 67));
+
+function mySubtractionFunction( num1, num2)
+{
+    const difference = num1 - num2; //"-" is only used for subtraction and js automatically tries to covert number datatype in this case.
+
+    return difference;
+}
+console.log (mySubtractionFunction(100/50));
+
+//const/let for declaration - 1
+//name of our function - 2
+// assignment operator - 3
+// paranthesis "()" with any parameters inside -4 
+// "fat arrow marks the beginning of function logic" - 5
+//what follows the fat arrow will simply be returned from the function - 6.1
+//we can use curly braces to manage larger instructions sets, which will give us more control over when/how we return the function - 6.2
+
+
+
+const myDivisionFunction = ( num1, num2 ) => num1 / num2;  // see 6.1
+console.log( "Division ( 36, 6): " + myDivisionFunction( 36, 6 ) );
+
+
+const myMultiplicationFunction = ( num1 = 0, num2 = 0 ) => // see 6.2
+{
+    const product = num1 * num2;
+    return product;
+};
+
+console.log(myMultiplicationFunction(3,9));
+
+/**
+ * JavaScript Object
+ */
+
+ const myObject = {};
+ 
