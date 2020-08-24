@@ -1,4 +1,4 @@
-alert ( "DOM events JS loaded!");
+ 
 
 /**
  * Targeting via the DOM (Document Object Model) in Javascript
@@ -39,4 +39,9 @@ alert ( "DOM events JS loaded!");
    */
 
    hoverButton.addEventListener('mouseenter', () => {console.log('The mouse has entered the button!')});
+   console.log(firstSpan.classList);
+   firstSpan.classList.add('salmon-coloured-text');
+   console.log(firstSpan.classList);
+
+   hoverButton.addEventListener('mouseleave', () => {console.log('The mouse has left the button!')});
 
