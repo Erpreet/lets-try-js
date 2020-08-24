@@ -1,0 +1,1 @@
+alert ( "DOM events JS loaded!");
