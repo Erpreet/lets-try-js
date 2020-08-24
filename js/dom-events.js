@@ -52,4 +52,13 @@
 
 clickButton.addEventListener('click', () => {
 console.log('The "click" button was clicked.');
+
+if(secondSpan.classList.contains('salmon-coloured-text'))
+{
+    secondSpan.classList.remove('salmon-coloured-text');
+}
+else
+{
+    secondSpan.classList.add('salmon-coloured-text');
+}
 });
