@@ -38,10 +38,14 @@
    * Event Listeners
    */
 
-   hoverButton.addEventListener('mouseenter', () => {console.log('The mouse has entered the button!')});
+   hoverButton.addEventListener('mouseenter', () => {console.log('The mouse has entered the button!')
    console.log(firstSpan.classList);
    firstSpan.classList.add('salmon-coloured-text');
    console.log(firstSpan.classList);
+});
 
-   hoverButton.addEventListener('mouseleave', () => {console.log('The mouse has left the button!')});
 
+   hoverButton.addEventListener('mouseleave', () => {console.log('The mouse has left the button!')
+   firstSpan.classList.remove('salmon-coloured-text');
+   console.log(firstSpan.classList);
+});
