@@ -33,3 +33,10 @@ alert ( "DOM events JS loaded!");
 
   myH2.className = `salmon-coloured-text`;
   console.log('Change the H2 font color to Salmon')
+
+  /**
+   * Event Listeners
+   */
+
+   hoverButton.addEventListener('mouseenter', () => {console.log('The mouse has entered the button!')});
+
