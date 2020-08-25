@@ -48,7 +48,35 @@ class Person
         document.body.appendChild(bDayH2);
         const bDayP = document.createElement('P');
         bDayP.textContent = `${this.name}is now ${this.age} years old`;
+        document.body.appendChild(bDayP);
 
+    }
+
+    outputHobbies()
+    {
+        const hobbiesP = document.createElement('P');
+        hobbiesP.textContent = `${this.name}'s hobbies include:`;
+        document.body.appendChild(hobbiesP);
+
+        const hobbiesUL = document.createElement('UL');
+        for ( const hobby in this.hobbies)
+        {
+            const hobbyLI = document.createElement('LI');
+            hobbyLI.textContent = hobby;
+
+            hobbiesUL.appendChild(hobbyLI);
+        }
+        document.body.appendChild(hobbiesUL);
+
+        
+    }
+
+    addHobby (hobby = "")
+    {
+        if(hobby.length > 0)
+        {
+            this.hobbies.push(hobby);
+        }
     }
 }
 
@@ -67,6 +95,9 @@ const jane = new Person (
     jane.birthday();
     console.log(jane.age);
 
+    jane.addHobby("Chess");
+    jane.outputHobbies();
+
     const dimitri = new Person(
         "Dimitri",
         41,
@@ -78,3 +109,5 @@ const jane = new Person (
     console.log(`My name is ${dimitri.name}. I am ${dimitri.age} years old`);
 
     dimitri.sayHello();
+
+    dimitri.outputHobbies();
