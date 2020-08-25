@@ -38,6 +38,18 @@ class Person
         helloP.textContent = `Hello there! I am ${this.name},nice to meet you!`;
         document.body.appendChild(helloP);
     }
+
+    birthday()
+    {
+        this.age++;
+
+        const bDayH2 = document.createElement('H2');
+        bDayH2.textContent = "Birthday Detected!";
+        document.body.appendChild(bDayH2);
+        const bDayP = document.createElement('P');
+        bDayP.textContent = `${this.name}is now ${this.age} years old`;
+
+    }
 }
 
 const jane = new Person (
@@ -50,6 +62,10 @@ const jane = new Person (
     console.log(jane instanceof Person);
 
     jane.sayHello();
+
+    console.log(jane.age);
+    jane.birthday();
+    console.log(jane.age);
 
     const dimitri = new Person(
         "Dimitri",
