@@ -13,4 +13,21 @@ helloForm.addEventListener('submit',(event ) => {
     console.log(event);
     console.log(event.target);
 
+    const name = nameField.value;
+    console.log(name);
+
+    const newLI = document.createElement('LI');
+    const newCheckBox = document.createElement('INPUT');
+    newCheckBox.type = "checkbox";
+
+    console.log(newLI);
+
+    newLI.textContent = `Hello, ${name}!`;
+    newLI.prepend(newCheckBox);
+    newCheckBox.addEventListener('click', () => {});
+    console.log(newLI.textContent);
+    console.log(newLI);
+
+    helloList.appendChild(newLI);
+
 });
