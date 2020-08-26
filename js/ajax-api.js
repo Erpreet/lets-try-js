@@ -20,4 +20,8 @@ fetch('http://api.open-notify.org/astros.json') //Add fetch to retreive Astronau
         document.body.appendChild(peopleUL); // to add UL to browser so we can see it
 
     
+} )
+.catch(error =>
+{
+    console.log(error); // Good idea to output when debugging
 } );
